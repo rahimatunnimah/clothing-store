@@ -5,6 +5,7 @@ import WithoutNavbar from "./components/Outlet/WithoutNavbar";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
+import DetailProduct from "./pages/DetailProduct/DetailProduct";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         </Route>
         <Route element={<DisplayNavbar />}>
           <Route path="/" element={<Home />} />
+          <Route path="/detail-product" element={<DetailProduct />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -2,10 +2,15 @@ import React from "react";
 import homeStyle from "../../../pages/Home/Home.module.css";
 import Rating from "./Rating";
 import imgProduct from "../../../assets/product.png";
+import { useNavigate } from "react-router-dom";
 
 function Card() {
+  const navigate = useNavigate();
   return (
-    <div className="col-xl-2 mt-xl-4 col-md-3 mt-md-3">
+    <div
+      className="col-xl-2 mt-xl-4 col-md-3 mt-md-3"
+      onClick={() => navigate("/detail-product")}
+    >
       <div className={`card h-100 ${homeStyle.cardItem}`} role="presentation">
         <img src={imgProduct} alt="product" />
         <div className="card-body">

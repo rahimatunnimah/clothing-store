@@ -1,0 +1,72 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.main .navigation nav{
+  margin-bottom: 3rem;
+  --bs-breadcrumb-divider: '>';
+}
+
+.main .navigation ol>li a{
+  text-decoration: none;
+  color: gray;
+}
+.imgDetail img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.tittleDetail  {
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 33px;
+}
+
+.color {
+  padding-left: 5px;
+  padding-right: 4px;
+}
+
+.btnNegative {
+  width: 38px;
+  margin-right: 5px;
+  background-color:#D4D4D4;
+  color: white;
+}
+
+.btnPositive {
+  width: 38px;
+  border: 1px solid gray;
+  color: gray;
+  margin-left: 5px;
+}
+
+.btnPositive:hover {
+  border: 1px solid gray !important;
+}
+
+.btnChat button {
+  width: 160px;
+  height: 48px;
+}
+
+.btnBuy button {
+  width: 343px;
+  height: 48px;
+}
+
+.topRating {
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.lineRating {
+  border: 3px solid #DB3022;
+  border-radius: 15px;
+}
