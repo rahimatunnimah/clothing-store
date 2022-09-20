@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import registerStyle from "./Register.module.css";
-import Logo from "../../components/atom/Logo";
-import FormRegisCust from "../../components/molecule/FormRegisCust";
-import FormRegisSeller from "../../components/molecule/FormRegisSeller";
+import logo from "../../assets/logo.png";
+import FormRegisCust from "../../components/Auth/FormRegisCust";
+import FormRegisSeller from "../../components/Auth/FormRegisSeller";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -24,17 +24,17 @@ const Register = () => {
   };
   return (
     <div className={`${registerStyle.container}`}>
-      <Logo />
-      <h4>Please signup with your account</h4>
-      <div className="btn-group">
+      <img src={logo} alt="logo" />
+      <h5 className="mt-3">Please signup with your account</h5>
+      <div className="btn-group mt-3">
         <button
-          className={`btn-cust ${onCust ? "isActive" : "notActive"}`}
+          className={`btn-cust ${onCust ? "isOn" : "isOff"}`}
           onClick={handleOptionCust}
         >
           Custommer
         </button>
         <button
-          className={`btn-seller ${onSeller ? "isActive" : "notActive"}`}
+          className={`btn-seller ${onSeller ? "isOn" : "isOff"}`}
           onClick={handleOptionSeller}
         >
           Seller
@@ -42,7 +42,7 @@ const Register = () => {
       </div>
       {onCust ? <FormRegisCust /> : <FormRegisSeller />}
 
-      <p>
+      <p className="mt-3">
         Already have a Tokopedia account?{" "}
         <Link to={"/login"} className={`${registerStyle.linkLogin}`}>
           Login

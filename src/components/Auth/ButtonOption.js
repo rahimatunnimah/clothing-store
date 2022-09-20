@@ -20,15 +20,15 @@ const ButtonOption = () => {
 
   return (
     <>
-      <div className="btn-group">
+      <div className="btn-group mt-3">
         <button
-          className={`btn-cust ${onCust ? "isActive" : "notActive"}`}
+          className={`btn-cust ${onCust ? "isOn" : "isOff"}`}
           onClick={handleOptionCust}
         >
           Custommer
         </button>
         <button
-          className={`btn-seller ${onSeller ? "isActive" : "notActive"}`}
+          className={`btn-seller ${onSeller ? "isOn" : "isOff"}`}
           onClick={handleOptionSeller}
         >
           Seller
